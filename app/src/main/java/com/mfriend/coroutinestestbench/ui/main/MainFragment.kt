@@ -8,9 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.observe
 import com.mfriend.coroutinestestbench.R
-import kotlinx.android.synthetic.main.main_fragment.btn_launch_dont_extend
-import kotlinx.android.synthetic.main.main_fragment.btn_launch_extend
-import kotlinx.android.synthetic.main.main_fragment.btn_launch_extend_timeout
+import kotlinx.android.synthetic.main.main_fragment.button
 import kotlinx.android.synthetic.main.main_fragment.tv_result
 
 class MainFragment : Fragment() {
@@ -30,19 +28,10 @@ class MainFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        btn_launch_dont_extend.setOnClickListener {
-            tv_result.text = ""
-            viewModel.launchDontExtend()
-        }
-        btn_launch_extend.setOnClickListener {
-            tv_result.text = ""
-            viewModel.launchExtend()
-        }
-        btn_launch_extend_timeout.setOnClickListener {
-            tv_result.text = ""
-            viewModel.launchExtendThenTimeout()
-        }
 
+        button.setOnClickListener {
+            // Pass to VM
+        }
         viewModel.message.observe(this) {
             tv_result.text = it
         }
