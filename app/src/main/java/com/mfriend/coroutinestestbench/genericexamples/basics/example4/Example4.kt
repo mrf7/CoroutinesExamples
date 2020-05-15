@@ -1,4 +1,4 @@
-package example4
+package com.mfriend.coroutinestestbench.genericexamples.basics.example4
 
 import kotlinx.coroutines.Deferred
 import kotlinx.coroutines.async

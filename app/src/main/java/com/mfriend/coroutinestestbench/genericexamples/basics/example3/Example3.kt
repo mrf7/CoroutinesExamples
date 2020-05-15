@@ -1,6 +1,6 @@
-package example3
+package com.mfriend.coroutinestestbench.genericexamples.basics.example3
 
-import example2.getNum
+import com.mfriend.coroutinestestbench.genericexamples.basics.example2.getNum
 import kotlinx.coroutines.Deferred
 import kotlinx.coroutines.async
 import kotlinx.coroutines.runBlocking

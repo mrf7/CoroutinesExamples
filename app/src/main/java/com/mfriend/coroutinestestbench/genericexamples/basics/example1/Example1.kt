@@ -1,4 +1,4 @@
-package example1
+package com.mfriend.coroutinestestbench.genericexamples.basics.example1
 
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch

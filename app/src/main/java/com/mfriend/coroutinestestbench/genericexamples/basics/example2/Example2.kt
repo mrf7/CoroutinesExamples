@@ -1,4 +1,4 @@
-package example2
+package com.mfriend.coroutinestestbench.genericexamples.basics.example2
 
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.runBlocking
@@ -15,6 +15,6 @@ fun main() = runBlocking {
 
 suspend fun getNum(value: Int): Int {
     delay(500)
-    println("finished example2.getNum($value)")
+    println("finished com.mfriend.coroutinestestbench.genericexamples.basics.example2.getNum($value)")
     return value
 }
