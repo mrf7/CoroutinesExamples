@@ -32,6 +32,6 @@ fun main() = runBlocking {
 }
 
 suspend fun getNum(number: Int): Int {
-    delay(500)
+    delay(1000)
     return number
 }
