@@ -44,7 +44,7 @@ suspend fun stillMainSafe(): Int = withContext(Dispatchers.IO) {
     return@withContext 1
 }
 
-// This function blocks the thread but doesnt switch contexts. Android studio gives an "
+// This function blocks the thread but doesnt switch contexts. Android studio gives an "inappropriate blocking method"
 suspend fun notMainSafe(): Int = coroutineScope {
     launch {
         Thread.sleep(500)
